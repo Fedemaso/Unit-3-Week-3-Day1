@@ -24,7 +24,7 @@ namespace WebApplication1
             decimal prezzoAuto = prezzi[indiceSelezione];
 
             
-            PrezzoAuto.Text = $"€{prezzoAuto:C}";
+            PrezzoAuto.Text = $"€{prezzoAuto:F2}";
         }
 
 
