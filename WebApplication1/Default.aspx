@@ -26,15 +26,14 @@
             <asp:ListItem value="mercedes.jpg" Text="Mercedes AMG GT" />
             <asp:ListItem value="lamborghini.jpg" Text="Lamborghini Aventador" />
             <asp:ListItem value="ferrari.jpg" Text="Ferrari Stradale"  />
-            <asp:ListItem value="porsche.jpg" Text="Porsche 911 GT3 RS"  />
+            <asp:ListItem value="porsche.jpeg" Text="Porsche 911 GT3 RS"  />
             <asp:ListItem value="nissan.jpg" Text="Nissan Nismo GT-R" />
             <asp:ListItem value="tartan.jpg" Text="Tartan Prancer"  />
         </asp:DropDownList>
 
         <div class="d-flex flex-column align-items-center">
         <asp:Image ID="Image1" Width="400px" runat="server" />
-        
-            <asp:Button CssClass="btn btn-dark my-4" ID="Button1" runat="server" Text="Scegli" OnClick="Button1_Click" />
+        <asp:Button CssClass="btn btn-dark my-4" ID="Button1" runat="server" Text="Scegli" OnClick="Button1_Click" />
         </div>
 
 
@@ -47,7 +46,10 @@
         <div class="mx-4"><asp:CheckBox ID="LineAssistant" runat="server" Text="Line Assistant (€2,000.00)" /></div>
         <div class="mx-4"><asp:CheckBox ID="RuotaDiScorta" runat="server" Text="Ruota di Scorta (€155.00)" /></div>
         <div class="mx-4"><asp:CheckBox ID="SediliVolantePelle" runat="server" Text="Sedili/Volante in Pelle (€700.00)" /></div>
-                </div>
+        </div>
+
+
+
             <div class="my-5">
         <h2 class="my-3">Anni di Garanzia:</h2>
         <asp:DropDownList ID="ddlGaranzia" runat="server">
@@ -58,6 +60,8 @@
         </asp:DropDownList>
 
                 </div>
+
+
          <div class="my-5">
 
 
@@ -70,8 +74,12 @@
             <p>Costo Garanzia: <asp:Label ID="CostoGaranzia" runat="server" Text="€0.00" /></p>
             <p>Totale: <asp:Label ID="Totale" runat="server" Text="€0.00" /></p>
         </div>
-             </div>
-   </div> </form>
+           
+       </div>
+
+        </div> 
+
+    </form>
 </body>
 </html>
 

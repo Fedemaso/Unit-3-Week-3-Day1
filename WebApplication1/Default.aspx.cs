@@ -11,10 +11,7 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-               
-            }
+            
         }
 
 
@@ -27,7 +24,7 @@ namespace WebApplication1
             decimal prezzoAuto = prezzi[indiceSelezione];
 
             
-            PrezzoAuto.Text = $"€{prezzoAuto:F2}";
+            PrezzoAuto.Text = $"€{prezzoAuto:C}";
         }
 
 
@@ -61,10 +58,10 @@ namespace WebApplication1
 
             decimal totale = prezzoAuto + costoOptionals + costoGaranzia;
 
-            PrezzoAuto.Text = $"€{prezzoAuto:F2}";
-            CostoOptionals.Text = $"€{costoOptionals:F2}";
-            CostoGaranzia.Text = $"€{costoGaranzia:F2}";
-            Totale.Text = $"€{totale:F2}";
+            PrezzoAuto.Text = $"€{prezzoAuto:C}";
+            CostoOptionals.Text = $"€{costoOptionals:C}";
+            CostoGaranzia.Text = $"€{costoGaranzia:C}";
+            Totale.Text = $"€{totale:C}";
         }
 
 
